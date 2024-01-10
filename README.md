@@ -28,17 +28,14 @@ summary(export_model_2)
 anova(export_model_1, export_model_2) 
 # export=3.653e-01 + 5.767e-02(exchange_rate)+ (-4.076e-02) inflation...
 
-#define new data frame of export
+# define new data frame of export
 
 newdata = data.frame(exchange_rate = c(83.29, 87.97, 92.66),FDI = c(55153239245, 60366220086, 70792181768), Import = c(28, 31, 33), manufacturing = c(12, 11, 9), inflation = c(8, 9, 11), gdp = c(3690000000000, 3960000000000, 4230000000000))
 newdata 
 
-#use model to predict 
+# use model to predict 
 predict(export_model_1, newdata)
                                       
-#Predicted export- for case 1 is 24.33
-#Predicted export- for case 2 is 26.77
-#Predicted export- for case 3 is 28.66
-                                      
+
 
                     
