@@ -1,4 +1,4 @@
-export <- read.csv("C:/Payel/KPMG Internal_cv/Brief/export.csv")
+export <- read.csv("C:/Payel/data/Brief/export.csv")
 View(export)
 # Change the column names
 names(export) = gsub(" ", "_", names(export))
